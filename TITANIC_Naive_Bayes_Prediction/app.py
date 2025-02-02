@@ -2,9 +2,12 @@ import streamlit as st
 from PIL import Image
 import joblib
 import pandas as pd
+import os
+dir_path = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(dir_path, 'titanic_nbayes_model.pkl')
 
 
-model = joblib.load('titanic_nbayes_model.pkl')
+model = joblib.load(model_path)
 def predict(data):
     result = model.predict(data)
     return result
