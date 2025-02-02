@@ -4,7 +4,7 @@ import joblib
 import pandas as pd
 
 
-model = joblib.load('titanic_nbayes_model.pkl')
+model = joblib.load('./titanic_nbayes_model.pkl')
 def predict(data):
     result = model.predict(data)
     return result
