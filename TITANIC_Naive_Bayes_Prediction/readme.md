@@ -25,10 +25,13 @@ P(\text{Survived} | \text{Pclass}, \text{Sex}, \text{Fare}) = \frac{P(\text{Pcla
 $$
 
 Où :
+
 - \( P(\text{Survived} | \text{Pclass}, \text{Sex}, \text{Fare}) \) est la probabilité qu'un passager ait survécu en fonction de sa classe, de son sexe et du prix du billet.
 - \( P(\text{Pclass}, \text{Sex}, \text{Fare} | \text{Survived}) \) est la probabilité d'observer ces caractéristiques sachant que le passager a survécu.
 - \( P(\text{Survived}) \) est la probabilité qu'un passager ait survécu dans l'ensemble du dataset.
 - \( P(\text{Pclass}, \text{Sex}, \text{Fare}) \) est la probabilité d'observer ces caractéristiques dans l'ensemble des données.
+
+
 
 
 Le modèle est entraîné avec **scikit-learn**, et les prédictions sont faites sur la base des distributions des variables.  
