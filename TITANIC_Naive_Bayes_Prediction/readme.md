@@ -12,19 +12,24 @@ Ce projet est une application interactive développée avec Streamlit qui permet
 Le modèle utilisé pour la prédiction est un **Naïve Bayes Gaussien**, entraîné avec `sklearn` et exporté avec `pickle`.  
 
 ## 🎯 Modèle de Machine Learning : Naïve Bayes  
-L'algorithme de Naïve Bayes repose sur la règle de Bayes : 
-\[ P(A | B) = \frac{P(B | A) \cdot P(A)}{P(B)} \]
+L'algorithme de **Naïve Bayes** repose sur la règle de Bayes :
 
-Dans notre contexte, cela correspond à :
+$$
+P(A | B) = \frac{P(B | A) \cdot P(A)}{P(B)}
+$$
 
-\[ P(Survived | Pclass, Sex, Fare) = \frac{P(Pclass, Sex, Fare | Survived) \cdot P(Survived)}{P(Pclass, Sex, Fare)} \] 
+Dans notre contexte, cela devient :
 
+$$
+P(\text{Survived} | \text{Pclass}, \text{Sex}, \text{Fare}) = \frac{P(\text{Pclass}, \text{Sex}, \text{Fare} | \text{Survived}) \cdot P(\text{Survived})}{P(\text{Pclass}, \text{Sex}, \text{Fare})}
+$$
 
-Dans notre contexte :  
-- \( P(Survived | Pclass, Sex, Fare) \) est la probabilité qu'un passager ait survécu en fonction de sa classe, son sexe et le prix du billet.  
-- \( P(Pclass, Sex, Fare | Survived) \) est la probabilité d'observer ces caractéristiques sachant que le passager a survécu.  
-- \( P(Survived) \) est la probabilité qu'un passager ait survécu dans l'ensemble du dataset.  
-- \( P(Pclass, Sex, Fare) \) est la probabilité d'observer ces caractéristiques dans l'ensemble des données.  
+Où :
+- \( P(\text{Survived} | \text{Pclass}, \text{Sex}, \text{Fare}) \) est la probabilité qu'un passager ait survécu en fonction de sa classe, de son sexe et du prix du billet.
+- \( P(\text{Pclass}, \text{Sex}, \text{Fare} | \text{Survived}) \) est la probabilité d'observer ces caractéristiques sachant que le passager a survécu.
+- \( P(\text{Survived}) \) est la probabilité qu'un passager ait survécu dans l'ensemble du dataset.
+- \( P(\text{Pclass}, \text{Sex}, \text{Fare}) \) est la probabilité d'observer ces caractéristiques dans l'ensemble des données.
+
 
 Le modèle est entraîné avec **scikit-learn**, et les prédictions sont faites sur la base des distributions des variables.  
 
@@ -61,7 +66,7 @@ streamlit run app.py
 
 ---
 💡 **Auteur** : Kiswendsida OUEDRAOGO  
-📧 **Contact** : [ou.kiswendsida@gmail.com]  
-🌍 **LinkedIn** : [www.linkedin.com/in/o-kiswendsida]  
+📧 [**Contact**](mailto:ou.kiswendsida@gmail.com)  
+🌍 [**LinkedIn**](https://www.linkedin.com/in/o-kiswendsida) 
 
 
