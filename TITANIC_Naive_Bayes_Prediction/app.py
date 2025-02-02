@@ -8,6 +8,7 @@ model_path = os.path.join(dir_path, 'titanic_nbayes_model.pkl')
 
 
 model = joblib.load(model_path)
+
 def predict(data):
     result = model.predict(data)
     return result
