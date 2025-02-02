@@ -14,7 +14,7 @@ def predict(data):
     return result
 
 # Charger l'image de la bannière
-banner = Image.openos.path.join(dir_path, 'banner.jpg')
+banner = Image.open(os.path.join(dir_path, 'banner.jpg'))
 st.image(banner, use_container_width=True)
 
 
