@@ -21,7 +21,7 @@ $$
 Dans notre contexte, cela devient :
 
 $$
-P(\text{Survived} | \text{Pclass}, \text{Sex}, \text{Fare}) = \frac{P(\text{Pclass}, \text{Sex}, \text{Fare} | \text{Survived}) \cdot P(\text{Survived})}{P(\text{Pclass}, \text{Sex}, \text{Fare})}
+P(\text{Survived} | \text{Pclass}, \text{Sex},\text{Age}, \text{Fare}) = \frac{P(\text{Pclass}, \text{Sex},\text{Age}, \text{Fare} | \text{Survived}) \cdot P(\text{Survived})}{P(\text{Pclass}, \text{Sex},\text{Age}, \text{Fare})}
 $$
 
 Où :
